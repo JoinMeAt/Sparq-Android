@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <View
+        android:id="@+id/class_color"
+        android:layout_width="10dp"
+        android:layout_height="match_parent"
+        android:background="#FF0000" />
+
+    <ImageView
+        android:id="@+id/class_icon"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_alignParentTop="true"
+        android:layout_margin="8dp"
+        android:layout_toRightOf="@+id/class_color"
+        android:src="@drawable/history_icon" />
+
+    <TextView
+        android:id="@+id/class_subject"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/class_icon"
+        android:layout_toRightOf="@+id/class_icon"
+        android:layout_marginTop="4dp"
+        android:textSize="18sp"
+        android:text="Chapel, Advisory, Community" />
+
+    <ImageView
+        android:id="@+id/class_time_ic"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_margin="4dp"
+        android:layout_alignLeft="@+id/class_subject"
+        android:layout_below="@+id/class_subject"
+        android:src="@drawable/ic_time" />
+
+    <TextView
+        android:id="@+id/class_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/class_time_ic"
+        android:layout_toRightOf="@+id/class_time_ic"
+        android:text="TextView" />
+
+    <ImageView
+        android:id="@+id/class_room_ic"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_below="@+id/class_subject"
+        android:layout_marginBottom="4dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginTop="4dp"
+        android:layout_toRightOf="@+id/class_time_ic"
+        android:src="@drawable/ic_pin" />
+
+    <TextView
+        android:id="@+id/class_room"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/class_room_ic"
+        android:layout_toRightOf="@+id/class_room_ic"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/class_duration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:layout_alignLeft="@+id/class_time_ic"
+        android:layout_below="@+id/class_time_ic"
+        android:text="TextView" />
+
+</RelativeLayout>
